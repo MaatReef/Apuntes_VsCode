@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Tips de Visual Code</h1>
+    <p>Ediciones y Tips Básicos</p>
+    <pre>
+        alt + ->                    -> Alt más flecha de dirección movemos el código
+        
+        ctr + shift alt + ->        -> Movemos el bloque completo
+
+        ctr + k  y ctr + u          -> Para comentar y descomentar
+                                    <!-- comentando -->
+
+        shift + tab                 -> Para desidentar codigo
+
+        Control + click derecho     -> Para crear un archivo sobre el enlace
+        <!-- <script src="app.js"></script> -->
+
+        alt + click                 -> Sobre las variables para ir a la variable en particular
+                                    -> Así vamos a la definición de la cosntante o variable en particular
+        alt + f12                   -> También pero ojeamos sin necesidad de salir del archivo.
+                                    -> Salimos con escape   
+                                    
+        ctr + shift + k             -> Borramos una linea en particular
+        ctr + shift + l y ctr + shift + k         -> Para borrar desde multiples lineas
+
+        ctr + z                     -> Deshacer
+        ctr + alt + z               -> Rehacer
+        
+        ctr + b                     -> Guardar el menú lateral
+        ctr + K Z                   -> Modo Zen sin distracciones, enfocarse en el código
+
+        ctr + p                     -> Buscar archivos en concretos
+
+        ctr + shift + ñ             -> Abrimos la terminal  
+    </pre>   
+    <br>                       
+    <pre>
+        Usando emmet y configurar nuestras propios Shortcouts
+        ctr + shift + p             -> Buscamos el archivo  
+                                    -> Emmet: Wrap with abbreviation
+                                    -> Sobre el codigo concreto creamos un snippets en concreto
+                                    -> En keyboard shortcouts
+                                    -> con alt + w o las teclas que deseemos
+                                    -> Luego podremos envolver el codigo o generar codigo automaticamente
+    </pre>
+    <br>
+    <pre>
+        ctr + w                 -> Cerrar Tab
+        ctr + k  ctr + w        -> Cerrar todas
+        ctr + shift + t         -> Reabrir anterior
+        ctr + tab               -> Cambiar de Tab
+    </pre>
+    <p>Multi Cursores y edición rápida</p>
+    <pre>
+        Clonar líneas - Copy Line Down                          -> sfhit + alt + down
+
+        Crear cursores arriba y abajo de la posición actual     -> ctr + alt + direccion
+
+        Multi Cursor - Copy                                     -> ctr + alt + direcciones y ctr + copy
+
+        Multi cursor para formato                               -> ctr + alt + flecha de dirección
+
+        Multi Cursor - Lowercase y Uppercase                    -> ctr + alt
+                                   Uppercase                    -> shift + ctr + u  
+                                                                -> Shift + direccion seleccionamos solo un solo caracter  
+                        -> ctr + shift + p O bien con F1 buscamos las preferencias
+                        -> ctr + alt + u            -> Uppercase                -> Bajo mi preferencia
+                        -> ctr + alt + l            -> Lowercase                -> Bajo mi preferencia
+
+        Múltiples cursores en posiciones específicas            -> shif + alt y doble click
+           
+        Siguiente ocurrencia                                    -> ctr + d
+                    -> Modificamos varias etiquetas de una sola vez
+
+        Creación de un arreglo de días                      ->
+                            -> ctr + alt    
+            'Lunes'
+            'Martes'
+            'Miercoles'
+            'Jueves'
+            'Viernes'
+            'Sabado'
+            'Domingo'
+        
+    </pre>
+    <br>
+    <p>Definiciones y Snippets</p>
+    <pre>
+                                            -> O bien, ctr + P  Luego @           -> Para mostrar las definiciones
+        Definiciones en un archivo          -> ctr + shift + O                    -> Podemos desplazarnos por todo el archivo
+                                            
+        Ir a una línea                      -> ctr + g    num                     -> vamos a una linea en particular
+                                            -> O bien, ctr + P  Luego :   num     -> Para ir a una línea en particular
+                                                                    Ej,    1      -> Inicio del archivo
+
+        Markdown.md                         -> ctr + p : Markdown open preview    -> Para visualizar markdown en el archivo que trabajamos
+
+        Replace Symbol                      -> F2                                 -> Para cambiar definiciones dentro del archivo
+                                            -> F2  también si lo aplicamos de manera global desde un export, afectará a todo el archivo
+
+        Snippets Básicos                    -> ctr + shift + p                    -> User snippets        cc                                
+    </pre>
+    <p>Extensiones Generales</p>
+    <pre>
+        - Paste JSON as Code
+            -> Crea una Interfaz de archivo Json a código
+            -> Usamos un página con información Json de Pokemón para un ejemplo sencillo <a href="https://pokeapi.co/">Página para realizar el ejemplo</a>
+            -> Con la extensión instalda, ctr + shift + p y buscamos la extensión.
+            -> Pasamos el archivo Json a code
+
+            <a href="https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype">Instalar la extensión Paste JSON as Code desde acá</a>
+
+        - TODO Tree - TODO Highlight
+            TODO Tree   -> Util para realizar marcas en el código, que servirán como atajos.
+                ->  // TODO: Escribimos lo que deseemos, ayuda para realizar marcas en el código.
+                ->  // FIXME: También sirve
+            
+                Agregar al settings del TODO para evitar ver los módulos de node o cualquier otro tipo de archivos
+                    "todo-tree.excludeGlobs":[              -> Excluimos los siguientes archivos/ficheros
+                        "**/node_modules/**",
+                        "**/vendor/**",
+                        "**/bower_components/**",
+                        "**/dist/**"
+                    ],
+
+
+            TODO Tree 
+            <a href="https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree">Instalar la extensión TODO desde acá</a>
+            TODO Highlight
+            <a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">Instalar la extensión Highlight desde acá</a>
+        
+        - Bookmarks
+            -> Parecido al TODO ctr + alt + k  (ctr + shift + p  Bookmarks:toggle -> Para buscar el atajo en el teclado)
+            -> Crea una lista para direccionar de manera rápida al lugar marcado.
+
+            <a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks">Instalar la extensión Bookmarks desde acá</a>
+        - Material Icon Theme
+            -> Iconos para visualizar en VsCode
+
+            <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme">Instalar la extensión Material Icon Theme desde acá</a>
+
+        - Material Theme
+            -> Temas, que varian en color y demàs
+
+        - Live Server
+            -> Servidor local
+
+        - Color Highlight
+            -> Muestra el color representado de un código Hexadecimal
+
+        - Bracket Pair Colorizer 2
+            -> Mejor visualización de los Brackes o funciones anidadas.
+
+        <a href="https://gist.github.com/Klerith/5a572bf9835b090d4cd8304d523365c7">Extensiones que Recomienda el Instructor</a>
+    </pre>
+    <br>
+    <img src="img/1.PNG" alt="">
+    <br>
+    <img src="img/2.PNG" alt="">
+    <br>
+    <img src="img/3.PNG" alt="">
+    <br>
+    <img src="img/4.PNG" alt="">
+    <br>
+    <img src="img/5.PNG" alt="">
+    <br>
+    <img src="img/6.PNG" alt="">
+    <br>
+    <img src="img/7.PNG" alt="">
+    <br>
+    <img src="img/8.PNG" alt="">
+    <br>
+    <img src="img/9.PNG" alt="">
+    <br>
+    <img src="img/10.PNG" alt="">
+    <br>
+    <img src="img/11.PNG" alt="">
+    <br>
+    <img src="img/12.PNG" alt="">
+    <br>
+    <a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank">Más opciones</a>
+</body>
+</html>
